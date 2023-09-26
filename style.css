@@ -1,0 +1,433 @@
+*{
+  cursor: none;
+  
+  padding: 0;
+}
+
+body{
+  margin: 0;
+}
+
+@font-face{
+  font-family: 'Sf';
+  src: url(./sfns-display-bold.ttf);
+}
+  
+
+@media (max-width: 1000px) {
+    .navbar__wrap .menu {
+      display: none;
+    }
+  
+    .hamb {
+      display: flex;
+      align-items: center;
+    }
+  
+    .hamb__field {
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+  
+    .bar {
+      display: block;
+      width: 30px;
+      height: 3px;
+      margin: 6px auto;
+      background-color: #fff;
+      transition: 0.2s;
+}
+  
+    .popup {
+      position: fixed;
+      top: 75px;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      z-index: 100;
+      display: flex;
+      transition: 0.3s;
+}
+  
+    .popup.open {
+      left: 0;
+    }
+  
+    .popup .menu {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: start;
+      padding: 50px 0;
+      
+    }
+  
+    .popup .menu > li {
+      width: 100%;
+    }
+  
+    .popup .menu > li > a {
+      width: 100%;
+      
+      display: flex;
+      justify-content: center;
+      padding: 20px 0;
+      font-size: 20px;
+      font-weight: bold;
+      color: #3f3f3f;
+    }
+  
+    .popup .menu > li > a:hover {
+      background-color: rgba(122, 82, 179, 0.1);
+    }
+  
+    .hamb__field.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .hamb__field.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+}
+  
+    .hamb__field.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+
+}
+  
+    body.noscroll {
+      overflow: hidden;
+    }
+
+    
+  }
+
+  table {
+    width: 100%;
+    margin-top: 90px;
+    margin-bottom: 18px;
+    padding: 0;
+    font-size: 13px;
+    border: 1px solid #7A52B3;
+    border-spacing: 0;
+    border-collapse: separate;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #7A52B3;
+    font-family: Helvetica, Arial;
+    font-size: 12px;
+    color: white;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+table th, table td {
+    padding: 10px 10px 9px;
+    line-height: 18px;
+    text-align: left;
+}
+
+table th {
+    padding-top: 9px;
+    font-weight: bold;
+    vertical-align: middle;
+    color: #ffffff;
+    font-family: 'Sf'
+}
+
+table td {
+    vertical-align: top;
+    border-top: 1px solid #7A52B3;
+}
+
+table th+th,table td+td,table th+td {
+    border-left: 1px solid #ffffff;
+}
+
+table thead tr:first-child th:first-child, table tbody tr:first-child td:first-child {
+    -webkit-border-radius: 5px 0 0 0;
+    -moz-border-radius: 5px 0 0 0;
+    border-radius: 5px 0 0 0;
+}
+
+table thead tr:first-child th:last-child, table tbody tr:first-child td:last-child {
+    -webkit-border-radius: 0 5px 0 0;
+    -moz-border-radius: 0 5px 0 0;
+    border-radius: 0 5px 0 0;
+}
+
+table tbody tr:last-child td:first-child {
+    -webkit-border-radius: 0 0 0 5px;
+    -moz-border-radius: 0 0 0 5px;
+    border-radius: 0 0 0 5px;
+}
+
+table tbody tr:last-child td:last-child {
+    -webkit-border-radius: 0 0 5px 0;
+    -moz-border-radius: 0 0 5px 0;
+    border-radius: 0 0 5px 0;
+}
+
+table tbody tr:nth-child(odd) td {
+	background-color: #8f60d2;
+}
+
+table tbody tr:hover td {
+    background-color: #232022;
+	
+}
+
+.about_us{
+  width: 100%;
+  min-height: 500px;
+  background-color: #ffffff;
+  margin-top: 90px;
+}
+
+.box2{
+  width: 90%;
+  min-height: 500px;
+  background-color: #7A52B3;
+  margin: auto;
+  padding: 30px;
+  flex-wrap: wrap;
+}
+
+.cad1{
+  width: 50%;
+  min-height: 60px;
+  background-color: #ffffff;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.text1{
+  color: #7A52B3;
+  font-family: 'Sf';
+}
+
+.cad2{
+  width: 80%;
+  min-height: 80px;
+  background-color: #7A52B3;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.text2{
+  color: #fff;
+  font-family: 'Sf';
+  font-size: 20px;
+}
+
+a{
+  text-decoration: none;
+}
+
+.cad3{
+  width: 80%;
+  min-height: 40px;
+  background-color: #ffffff;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.cad4{
+  width: 60%;
+  min-height: 40px;
+  background-color: #ffffff;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.cad4:hover{
+  background-color: #000000;
+}
+
+.cad3:hover{
+  background-color: #000000;
+  
+}
+
+.text3{
+  color: #7A52B3;
+  font-family: 'Sf';
+  font-size: 15px;
+}
+
+i{
+  padding: 3px;
+}
+
+.text1{
+  font-size: 20px;
+}
+
+.cad5{
+  width: 80%;
+  min-height: 80px;
+  background-color: #7A52B3;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.chat {
+	border:1px solid #333;
+	margin:15px;
+	width:40%;
+	height:70%;
+	background:#555;
+	color:#fff;
+}
+
+.chat-messages {
+	min-height:93%;
+	max-height:93%;
+	
+}
+
+.chat-messages__content {
+	padding:1px;
+}
+
+.chat__message {
+	border-left:3px solid #333;
+	margin-top:2px;
+	padding:2px;
+}
+
+.chat__message_black {
+	border-color:#000;
+}
+
+.chat__message_blue {
+	border-color:blue;
+}
+
+.chat__message_green {
+	border-color:green;
+}
+
+.chat__message_red {
+	border-color:red;
+}
+
+.chat-input {
+	min-height:6%;
+}
+input {
+	font-family:arial;
+	font-size:16px;
+	vertical-align:middle;
+	background:#333;
+	color:#fff;
+	border:0;
+	display:inline-block;
+	margin:1px;
+	height:30px;
+}
+
+.chat-form__input {
+	width:79%;
+}
+
+.chat-form__submit {
+	width:18%;
+}
+
+
+.about_us {
+  opacity: 0; /* Начальная прозрачность элемента */
+  transition: opacity 1s; /* Переход анимации с длительностью 1 секунда */
+}
+
+td{
+  opacity: 0; /* Начальная прозрачность элемента */
+  transition: opacity 2s; /* Переход анимации с длительностью 1 секунда */
+}
+
+.cad2{
+  opacity: 0; /* Начальная прозрачность элемента */
+  transition: opacity 3s; /* Переход анимации с длительностью 1 секунда */
+}
+
+table {
+  opacity: 0; /* Начальная прозрачность элемента */
+  transition: opacity 1s; /* Переход анимации с длительностью 1 секунда */
+}
+
+.animate {
+  opacity: 1; /* Конечная прозрачность элемента */
+}
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+
+
+
+.cursor {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: 1px solid black;
+  transition: all 200ms ease-out;
+  position: fixed;
+  pointer-events: none;
+  left: 0;
+  top: 0;
+  transform: translate(calc(-50% + 15px), -50%);
+}
+
+.cursor2 {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: black;
+  opacity: 0.3;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: width 0.3s, height 0.3s, opacity 0.3s;
+}
+
+
+
+.cursorinnerhover {
+  width: 50px;
+  height: 50px;
+  opacity: 0.5;
+}
+
+
+
+
+
+
+
+
